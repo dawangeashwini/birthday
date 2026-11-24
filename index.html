@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Birthday Surprise 💜</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Decorations -->
+    <div class="floating-hearts"></div>
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+
+        <div class="card">
+
+            <div class="moon">🌙</div>
+
+            <p class="small-text">A little something for someone special</p>
+
+            <h1>Hey, Birthday Girl! 💜</h1>
+
+            <p class="description">
+                Someone very special has a birthday today...
+                and I have something tiny but magical for you.
+            </p>
+
+            <div class="cute-character">🧸</div>
+
+            <button onclick="nextPage(2)">
+                Open Your Surprise ✨
+            </button>
+
+            <p class="footer-text">Made with love & a little bit of magic</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+
+        <div class="card">
+
+            <div class="emoji">🎀</div>
+
+            <h1>Let's Play a Little Game!</h1>
+
+            <p class="description">
+                Before your birthday surprise,
+                answer these cute little questions.
+            </p>
+
+            <div class="question-box">
+
+                <h3>Who is the cutest person ever? 👀</h3>
+
+                <div class="options">
+                    <button class="option" onclick="answer(this)">Me, obviously! 💅</button>
+                    <button class="option" onclick="answer(this)">My bestie 😌</button>
+                    <button class="option" onclick="answer(this)">Both of us! 💗</button>
+                </div>
+
+                <p id="answerText"></p>
+
+            </div>
+
+            <button onclick="nextPage(3)">
+                Continue 💜
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+
+        <div class="card">
+
+            <div class="emoji">💌</div>
+
+            <h1>Reasons You're Special</h1>
+
+            <p class="description">
+                A few reasons why having you in my life is a blessing.
+            </p>
+
+            <div class="reason-card" onclick="changeReason()">
+
+                <h2 id="reasonTitle">Tap me! 🎁</h2>
+
+                <p id="reasonText">
+                    There's a little surprise hidden here.
+                </p>
+
+            </div>
+
+            <p class="tap-text">✨ Tap the card for another reason ✨</p>
+
+            <button onclick="nextPage(4)">
+                One Last Thing 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+
+        <div class="card letter-card">
+
+            <div class="emoji">💌</div>
+
+            <h1>A Letter For You</h1>
+
+            <div class="letter">
+
+                <p>Dear Bestie, 💜</p>
+
+                <p>
+                    Happy Birthday to the person who makes ordinary
+                    days feel a little more special.
+                </p>
+
+                <p>
+                    I hope life gives you the kind of happiness
+                    that makes your heart feel full, the kind of
+                    love that never makes you question your worth,
+                    and the kind of dreams that actually come true.
+                </p>
+
+                <p>
+                    Thank you for being you, for existing,
+                    and for making so many memories with me.
+                </p>
+
+                <p>
+                    No matter how much life changes,
+                    I hope we always have our little moments,
+                    our stupid jokes and our endless talks.
+                </p>
+
+                <<p>
+                    You deserve all the beautiful things in this world.
+                    Never forget that. 🥹
+                </p>
+
+                <p class="signature">
+                    Forever your partner in crime 💗
+                </p>
+
+            </div>
+
+            <button onclick="nextPage(5)">
+                Your Final Surprise 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section class="page" id="page5">
+
+        <div class="card final-card">
+
+            <div class="emoji">🎂</div>
+
+            <h1>Happy Birthday!</h1>
+
+            <h2 class="birthday-name">My Favorite Human 💜</h2>
+
+            <div class="cake">🎂</div>
+
+            <p class="description">
+                May your life be filled with laughter,
+                beautiful surprises, unforgettable memories,
+                endless love and a million reasons to smile.
+            </p>
+
+            <h2 class="wish">Keep shining, birthday girl! ✨</h2>
+
+            <button onclick="celebrate()">
+                Make a Wish! 🌠
+            </button>
+
+            <p id="finalMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
